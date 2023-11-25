@@ -21,7 +21,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Setup Node
-        uses: actions/setup_node@v3
+        uses: actions/setup_node@v2
         with:
           node_version: 18.x
 
