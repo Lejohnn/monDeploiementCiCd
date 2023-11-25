@@ -6,12 +6,12 @@ env:
 on:
   push:
     branches:
-      - main
+      - master
       - develop
 
   pull_request:
     branches:
-      - main
+      - master
 
 jobs:
   tests:
@@ -43,4 +43,3 @@ jobs:
       # permet de savoir quelles parties de l'application sont convers par les tests
       - name: Tests
         run: npm run test -- --no-watch --code-coverage
-        
